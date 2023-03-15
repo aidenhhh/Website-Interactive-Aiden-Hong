@@ -1,0 +1,48 @@
+
+body,html {
+    font-size: 18px;
+    margin: 10;
+    padding: 10;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+  
+.rocks {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border:5px;
+    width:15vw;
+    height:15vw;
+    
+
+}
+.imgrock{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    width:15vw;
+    height:15vw
+    
+    
+}
+
+.rocks:hover {
+    transition: 0.5s;
+    transform:scale(1.1)
+    
+
+}
+
+.spring{
+    background-color: red;
+    transition: 0.5s;
+    transform:scale(1.1)
+   
+    
+}
+
+.rocks:active{
+    background-color: green;
+}
