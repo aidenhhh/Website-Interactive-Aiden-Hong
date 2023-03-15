@@ -7,7 +7,8 @@ const PatternListElm=document.querySelector("#pattern-list")
 SaveMemory=[Math.floor(Math.random()*3)];
 PlayerMemory=[];
 counter=0;
-animcounter=0;
+tcounter=0;
+
 
 PatternListElm.textContent="Score: " + 0
 
@@ -33,8 +34,6 @@ function playAnim(savenum){
 playAnim(SaveMemory[0])
     
 
-
-
 function doRockThing(rockColor){
     
     
@@ -50,8 +49,7 @@ function doRockThing(rockColor){
         PlayerMemory.push(2);
      
     }
-    
-
+  
     
     if (PlayerMemory[counter]==SaveMemory[counter]){
         if (counter==SaveMemory.length-1){
@@ -61,11 +59,6 @@ function doRockThing(rockColor){
             tcounter=counter*100
             counter=0
             delay(SaveMemory.length-1)
-            
-            
-            
-            
-            
 
         }
         else {
